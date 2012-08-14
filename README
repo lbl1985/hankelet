@@ -1,0 +1,93 @@
+### Installation and Requirements###
+
+You should be able to run the code with MATLAB R2010b or later. 
+The package including one section of my own toolbox, if you want you
+could download the full version from the following github website: 
+
+    github.com/lbl1985/toolbox
+
+Our research is heavily depended on [1]'s work. You could be able to
+check their code at their own website:
+
+    http://lear.inrialpes.fr/people/wang/dense_trajectories
+
+Our package will continue two version of binary files compiled from
+their source code.
+
+Later on, you could also download the more up to date (such as C++ and
+CUDA implementation) code from repo:
+
+      github.com/lbl1985/hankelet
+
+### Tests ###
+
+There are two testing sections in script: mainProcedure.m One is for
+Mass processing and the other is for labeling visualization.
+
+Run the following code in MATLAB terminal: 
+
+>> mainProcedure
+
+---- Test  Section 1 ---- 
+This section loads the testData.mat, which is velocity information
+extracted from experiment. 
+
+This sections includes Kmeans Clustering and Labeling
+subsections. These two steps are the essential for our hankelet in [2].
+
+
+Based on these procedure, other researchers could proposed their own
+experiment settings for various datasets. 
+
+---- Test  Section 2 ---- 
+This section loads person_trial.mat, which is exacted from
+person01_boxing_d1_uncomp video in KTH dataset by using the two binary
+files located in 90support/dense_binary. One for absolute value and
+the other for corresponding velocity. 
+
+The variable X_train is extracted from "corresponding velocity" (:,
+8:37)';
+and varialbe trajectory is extracted from "absolute" (:, 8:37);
+
+Since the "corresponding velocity" is the information we processed in
+our algorithm for clustering and labeling. The absolute is only for
+visulaization usage. 
+
+Reference:
+
+[1]	H. Wang, A. Klaser, C. Schmid, and C.-L. Liu, “Action
+recognition by dense trajectories,” presented at the Computer Vision
+and Pattern Recognition (CVPR), 2011 IEEE Conference on, 2011,
+pp. 3169–3176.
+
+[1]	B. Li and O. I. Camps, “Cross-view Activity Recognition using
+Hankelets,” presented at the Computer Vision and Pattern Recognition
+(CVPR), 2012 IEEE Conference on, 2012, pp. 1362–1369.
+
+### Bugs and extensions ###
+
+If you find bugs, etc., feel free to drop me a line. Also if you
+developed some extension to the program, let me know and I can include
+it in the code. You could contact me through email: 
+
+binlong.li at gmail.com
+
+### LICENSE CONDITIONS ###
+
+Copyright (C) 2012 Binlong Li, Octavia I Camps, Mario Sznaier
+
+This program is free software; you can redistribute it and/or
+modify it under the terms of the GNU General Public License
+as published by the Free Software Foundation; either version 2
+of the License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program; if not, write to the Free Software
+Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
+
+
