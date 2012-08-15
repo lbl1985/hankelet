@@ -6,23 +6,23 @@ could download the full version from the following github website:
 
     github.com/lbl1985/toolbox
 
-Our research is heavily depended on [1]'s work. You could be able to
-check their code at their own website:
+The code uses tracklets obtained using code provided by [2]. You can obtain
+the code at
 
     http://lear.inrialpes.fr/people/wang/dense_trajectories
 
-Our package will continue two version of binary files compiled from
-their source code.
+Our package contains two versions of binary files compiled from
+their source code (one with velocities and the other with absolute coordinates).
 
-Later on, you could also download the more up to date (such as C++ and
-CUDA implementation) code from repo:
+We are working on a CUDA implementation that will be uploaded soon. Please 
+check again in a few weeks at the repo:
 
       github.com/lbl1985/hankelet
 
 ### Tests ###
 
-There are two testing sections in script: mainProcedure.m One is for
-Mass processing and the other is for labeling visualization.
+The testing script mainProcedure.m has two sections. One is for
+massive processing and the other is for labeling visualization.
 
 Run the following code in MATLAB terminal: 
 
@@ -30,30 +30,31 @@ Run the following code in MATLAB terminal:
 
 ---- Test  Section 1 ---- 
 This section loads the testData.mat, which is velocity information
-extracted from experiment. 
+extracted from tracklets from a set of videos depicting activities. 
 
-This sections includes Kmeans Clustering and Labeling
-subsections. These two steps are the essential for our hankelet in [2].
+This section includes Kmeans Clustering and Labeling
+subsections. These two steps are the basis for Bags of Hankelets as 
+described in [1].
 
 
-Based on these procedure, other researchers could proposed their own
-experiment settings for various datasets. 
+Based on these procedures, other researchers can easily modify the code to use
+their own experiment settings for other datasets. 
 
 ---- Test  Section 2 ---- 
-This section loads person_trial.mat, which is exacted from
-person01_boxing_d1_uncomp video in KTH dataset by using the two binary
-files located in 90support/dense_binary. One for absolute value and
-the other for corresponding velocity. 
+This section loads person_trial.mat, which is extracted from
+person01_boxing_d1_uncomp video in KTH dataset [3] by using the two binary
+files located in 90support/dense_binary.  Again, one is for velocities and 
+the other one is for absolute coordinates.
 
 The variable X_train is extracted from "corresponding velocity" (:,
 8:37)';
 and varialbe trajectory is extracted from "absolute" (:, 8:37);
 
-Since the "corresponding velocity" is the information we processed in
-our algorithm for clustering and labeling. The absolute is only for
-visulaization usage. 
+The "corresponding velocity" is the information we processed in
+our algorithm for clustering and labeling. The absolute coordinates portion
+ is only for visulaization purposes. 
 
-Reference:
+References:
 
 [1]	B. Li and O. I. Camps, M. Sznaier, "ÄúCross-view Activity Recognition using
 Hankelets,"Äù presented at the Computer Vision and Pattern Recognition
@@ -64,6 +65,10 @@ recognition by dense trajectories,"Äù presented at the Computer Vision
 and Pattern Recognition (CVPR), 2011 IEEE Conference on, 2011,
 pp. 3169-Äì3176.
 
+[3] C. Schuldt, I. Laptev, B. Caputo, "Recognizing Human Actions: A Local
+SVM Approach," presented at the International Conference on Pattern Recognition
+(ICPR), 2004 IEEE Conference on, 2012, pp. 32-36
+
 ### Bugs and extensions ###
 
 If you find bugs, etc., feel free to drop me a line. Also if you
@@ -71,6 +76,21 @@ developed some extension to the program, let me know and I can include
 it in the code. You could contact me through email: 
 
 binlong.li at gmail.com
+
+### Citation ###
+
+If you use this code, please cite our paper [1]:
+
+@inproceedings{LiCaSzCVPR12,
+author={B. Li and O. I. Camps and M. Sznaier},
+title={{ÄúCross-view Activity Recognition using
+Hankelets}},
+booktitle={{IEEE} Conference on Computer Vision \& Pattern Recognition},
+year= {2012},
+month={June},
+address={Providence, Rhode Island},
+pages={1362--1369}}
+
 
 ### LICENSE CONDITIONS ###
 
