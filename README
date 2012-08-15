@@ -55,14 +55,14 @@ visulaization usage.
 
 Reference:
 
-[1]	H. Wang, A. Klaser, C. Schmid, and C.-L. Liu, "€œAction
-recognition by dense trajectories,"€ presented at the Computer Vision
-and Pattern Recognition (CVPR), 2011 IEEE Conference on, 2011,
-pp. 3169â€“3176.
-
 [1]	B. Li and O. I. Camps, M. Sznaier, "€œCross-view Activity Recognition using
 Hankelets,"€ presented at the Computer Vision and Pattern Recognition
-(CVPR), 2012 IEEE Conference on, 2012, pp. 1362â€“1369.
+(CVPR), 2012 IEEE Conference on, 2012, pp. 1362-€“1369.
+
+[2]	H. Wang, A. Klaser, C. Schmid, and C.-L. Liu, "€œAction
+recognition by dense trajectories,"€ presented at the Computer Vision
+and Pattern Recognition (CVPR), 2011 IEEE Conference on, 2011,
+pp. 3169-€“3176.
 
 ### Bugs and extensions ###
 
