@@ -4,7 +4,7 @@ You should be able to run the code with MATLAB R2010b or later.
 The package includes one section of my own toolbox, if you want you
 could download the full version from the following github website: 
 
-    github.com/lbl1985/toolbox
+    http://github.com/lbl1985/toolbox
 
 The code uses tracklets obtained using code provided by [2]. You can obtain
 the code at
@@ -17,7 +17,7 @@ their source code (one with velocities and the other with absolute coordinates).
 We are working on a CUDA implementation that will be uploaded soon. Please 
 check again in a few weeks at the repo:
 
-      github.com/lbl1985/hankelet
+    http://github.com/lbl1985/hankelet
 
 ### Tests ###
 
