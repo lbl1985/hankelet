@@ -67,7 +67,7 @@ pp. 3169-3176.
 
 [3] C. Schuldt, I. Laptev, B. Caputo, "Recognizing Human Actions: A Local
 SVM Approach," presented at the International Conference on Pattern Recognition
-(ICPR), 2004 IEEE Conference on, 2012, pp. 32-36
+(ICPR), 2004, IEEE Conference on, 2012, pp. 32-36
 
 ### Bugs and extensions ###
 
@@ -83,7 +83,7 @@ If you use this code, please cite our paper [1]:
 
 @inproceedings{LiCaSzCVPR12,
 author={B. Li and O. I. Camps and M. Sznaier},
-title={{€œCross-view Activity Recognition using
+title={{Cross-view Activity Recognition using
 Hankelets}},
 booktitle={{IEEE} Conference on Computer Vision \& Pattern Recognition},
 year= {2012},
