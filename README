@@ -46,8 +46,7 @@ person01_boxing_d1_uncomp video in KTH dataset [3] by using the two binary
 files located in 90support/dense_binary.  Again, one is for velocities and 
 the other one is for absolute coordinates.
 
-The variable X_train is extracted from "corresponding velocity" (:,
-8:37)';
+The variable X_train is extracted from "corresponding velocity" (:, 8:37)';
 and varialbe trajectory is extracted from "absolute" (:, 8:37);
 
 The "corresponding velocity" is the information we processed in
