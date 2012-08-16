@@ -1,3 +1,6 @@
+%% Adding Path 
+addpath(genpath(getProjectBaseFolder));
+
 %% Testing Section 1: loading and testing on large data set
 % 
 % Load data

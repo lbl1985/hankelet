@@ -8,7 +8,7 @@ function visualTrajectories(word, trajectory, frameId, isRecord)
 nFrameVis = max(frameId);
 
 % baseFolder = getProjectBaseFolder();
-videoFolder = fullfile('/Users/herbert19lee/Documents/MATLAB/work/hankelet/', 'data');
+videoFolder = fullfile(getProjectBaseFolder, 'data');
 videoVar = video.movie2var(fullfile(videoFolder, 'person01_boxing_d1_uncomp.mp4'), 1, 1);
 h = figure(1);
 if isRecord
